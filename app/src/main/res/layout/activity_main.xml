@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ray.weathertest.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueBG">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="20dp"
+            android:paddingEnd="60dp"
+            android:paddingStart="60dp"
+            android:text="@string/dateText"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/todayWeatherStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/todayWeatherIcon"
+            android:paddingEnd="20dp"
+            android:paddingStart="0dp"
+            android:text="@string/weather_status"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/todayWeatherIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/art_clear" />
+
+        <TextView
+            android:id="@+id/todayTempLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todayWeatherIcon"
+            android:paddingBottom="20dp"
+            android:paddingStart="60dp"
+            android:text="@string/tempMin"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/todayTempHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="50dp"
+            android:text="@string/tempMax"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/weatherList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL2">
+
+    </ListView>
+</RelativeLayout>

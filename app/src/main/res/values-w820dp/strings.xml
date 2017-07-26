@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_status">status</string>
+    <string name="tempMin">15C</string>
+    <string name="tempMax">67C</string>
+</resources>

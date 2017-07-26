@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">weatherTest</string>
+    <string name="weather_status">status</string>
+    <string name="dateText">December</string>
+    <string name="tempMin">15C</string>
+    <string name="tempMax">67C</string>
+    <string name="today_date">Today, %s</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="humidity">Humidity: %s</string>
+    <string name="speed">Wind: %s</string>
+    <string name="pressure">Pressure: %s</string>
+
+</resources>
